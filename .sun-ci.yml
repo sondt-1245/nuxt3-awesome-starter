@@ -9,7 +9,7 @@ jobs:
   - yarn config set network-timeout 300000
   script:
   - yarn install
-  - yarn build
+  - yarn generate
   artifacts:
     paths:
       - .output
