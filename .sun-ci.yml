@@ -1,0 +1,15 @@
+stages:
+  - Build
+jobs:
+- name: Build docker with cmd args
+  stage: Build
+  workspace: none
+  image: docker:stable
+  services:
+  - docker:stable-dind
+  script:
+    - docker ps -a
+    - docker info
+    - docker build -t my:docker .
+    - docker images
+    - sleep 60
