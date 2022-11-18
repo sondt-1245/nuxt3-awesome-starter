@@ -12,4 +12,4 @@ jobs:
     - docker info
     - docker build -t my:docker .
     - docker images
-    - sleep 60
+    - sleep 10
