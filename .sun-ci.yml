@@ -3,7 +3,7 @@ stages:
   - Build Docker
 jobs:
 - name: Yarn Install
-  stage: B
+  stage: Build
   image: node:14-alpine
   before_script:
   - yarn config set network-timeout 300000
